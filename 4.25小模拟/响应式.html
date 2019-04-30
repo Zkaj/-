@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相应</title>
+    <style>
+        .menubut{display: none}
+        *{
+            box-sizing: border-box;text-align: center;
+        }
+        body>*{
+            width: 95%;height: auto;margin: 0 auto;
+            border: 1px solid #000;padding: 5px;
+        }
+        header{height: 50px;}
+        section{overflow: hidden}
+        footer{height: 30px}
+        section>*{border: 1px solid #000;float: left;}
+        aside{width: 25%;}
+        article{width: 75%; padding-left: 10px;}
+        .clearfix:after{
+            content: '';display: table;clear: both;
+        }
+        @media(max-width:720px){
+            #menu input[type="checkbox"], aside{display: none}  .dadao{display: none} .menubut{display:block;}
+            aside,article{
+                float: none;width: 100%;
+            }
+            @media(min-width: 720px) {
+                .menubut{display:none;}
+            }
+        }
+        header{
+            width: 100%;min-height: 200px;
+            background: url(图片视频/xiaojiejie.jpg) no-repeat center center;
+            background-size: cover;position: relative;
+        }
+        header h1{
+            margin-left: 160px;padding-top: 30px;
+            text-indent: -40px;line-height: 1.8em;font-size: 20px;font-weight: bold;color: white;
+        }
+        header #top_txt{
+            position: absolute;right: 50px;top: 20px;
+            padding: 4px 10px;border-radius: 5px;
+            background-color: rgba(225,255,255,0.8);
+        }
+        #menu ul li{float: left;}
+        @media (max-width:768px) {
+            #menu ul li {
+                float: none;text-align: center;
+            }
+        }
+        #menu>ul{display: none}
+        nav{
+            width: 100%;min-height: 38px;padding-top: 2px;
+            background: url(图片视频/xiaojiejie.jpg) repeat-x;
+            position: relative;
+        }
+        nav>#menu{width: 80%;margin: 0 auto;}
+        @media (max-width:768px) {
+            #menu,section{
+                width: 100%;
+            }
+        }
+        .menubut{
+            position: absolute;
+            right: 3%;
+            top: 4px;cursor: pointer;
+        }
+        .menubut img{width: 100%}
+        #menu input[type="checkbox"]:checked+ul{display:block;}
+        .clearfix img{
+            float: left;padding: 5px;border: 1px solid #ccc;width: 200px;
+        }
+        span.date{
+            font-style: normal;float: right;padding:  8px 60px 0 0;
+        }
+        .clearfix p{
+            line-height: 1.6em;text-indent: 2em;overflow: hidden;
+        }
+        @media(max-width: 1000px) {
+            .clearfix img{width: 40%;}
+            .clearfix p{font-size: 0.8em;}
+            span.date{display: none}
+        }
+        footer{background-color: yellow}
+        h2{
+            margin: 0;text-align: left;background-color: #225eff;
+        }
+        h3{
+            margin: 0;text-align: left;
+        }
+        .dadao a{
+            color:red;
+            background-color:#9cf;
+            text-align:center;
+            text-decoration:none;
+            padding:6px 10px;
+            border:1px solid #39f;
+            float:left;
+        }
+        .dadao a+a{
+            margin-left:5px;
+        }
+        .dadao a:hover{
+            color:white;
+            background-color:#930;
+        }
+        .dadao ul{
+            margin: 0;
+        }
+        .dadao ul li{width: 11%;margin: 0;float: left;}
+        li{
+            display: block;
+        }
+        .zuobian a{
+            float: left; margin-left: 46px;margin-top: 10px;
+        }
+        .zuobian{
+            height: 40%;
+        }
+        .tupianzi li{
+            width: 200px;float: left;
+        }
+    </style>
+</head>
+<body>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<header>
+    <h1>成功没有早晚<br>努力就有收获</h1>
+    <div id="top_txt"><a href="https://www.baidu.com/">收藏本页</a>
+        <a href="#">联系我</a>
+    </div>
+</header>
+<nav>
+    <div class="dadao">
+        <ul>
+            <li><a href="#"><span class="leftda">首页</span></a></li>
+            <li><a href="#"><span class="leftda">文章</span></a></li>
+            <li><a href="#"><span class="leftda">相册</span></a></li>
+            <li><a href="#"><span class="leftda">邮箱</span></a></li>
+            <li><a href="#"><span class="leftda">读信</span></a></li>
+            <li><a href="#"><span class="leftda">关于我</span></a></li>
+            <li><a href="#"><span class="leftda">联系方式</span></a></li>
+
+        </ul>
+    </div>
+    <div id="menu">
+        <input type="checkbox" id="togglebox" class="menubut">
+        <ul>
+            <li><a href="#"><span class="left">文章</span></a></li>
+            <li><a href="#"><span class="left">联系方式</span></a></li>
+            <li><a href="#"><span class="left">三个字</span></a></li>
+        </ul>
+        <label class="menubut" for="togglebox"><img src="图片视频/粗列表16px.png"></label>
+    </div>
+</nav>
+<section class="clearfix">
+    <aside>
+        <div class="zuobian">
+            <h2>最新日志</h2>
+            <a>达瓦分的玩法</a><br><br>
+            <a>达瓦分的玩法</a><br><br>
+            <a>达瓦分的玩法</a><br><br>
+            <a>达瓦分的玩法</a><br><br>
+            <a>达瓦分的玩法</a><br><br>
+        </div>
+        <div class="zuobian">
+            <h2>友情链接</h2>
+            <a>达瓦分的玩法</a><br><br>
+            <a>达瓦分的玩法</a><br><br>
+            <a>达瓦分的玩法</a><br><br>
+            <a>达瓦分的玩法</a><br><br>
+            <a>达瓦分的玩法</a><br><br>
+        </div>
+    </aside>
+    <article>
+        <div id="daliy" class="clearfix">
+            <div class="lanmu">
+                <img src="图片视频/两仪滚.jpg"><span class="date">2011/01/25</span>
+                <h3>技术的应用</h3> <p>阿萨德哈德发怒啥的股份按时给对方的撒发生的股份是感受到法国砂锅饭郭芳芳挨打的</p>
+            </div>
+            <hr style="clear: both">
+        </div>
+        <div id="daliy1" class="clearfix">
+            <div class="lanmu">
+                <img src="图片视频/两仪滚.jpg"><span class="date">2011/01/25</span>
+                <h3>技术的应用</h3> <p>阿萨德哈德发怒啥的股份按时给对方的撒发生的股份是感受到法国砂锅饭郭芳芳挨打的</p>
+            </div>
+            <hr style="clear: both">
+        </div>
+        <div class="clearfix">
+            <h2>最新图片</h2>
+            <ul class="tupianzi">
+                <li><img src="图片视频/xiaojiejie.jpg"><span>adwsa</span></li>
+                <li><img src="图片视频/xiaojiejie.jpg"><span>adwsa</span></li>
+                <li><img src="图片视频/xiaojiejie.jpg"><span>adwsa</span></li>
+                <li><img src="图片视频/xiaojiejie.jpg"><span>adwsa</span></li>
+            </ul>
+        </div>
+    </article>
+</section>
+<footer>版权由周某所拥有</footer>
+</body>
+</html>
